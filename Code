@@ -1,0 +1,39 @@
+# lear
+# Histogram
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+choice = int(input("\nEnter : "))
+
+
+if choice == 1:
+    # Histogram 1
+    array_1 = np.random.normal(170, 10, 250)
+    plt.hist(array_1)
+
+
+elif choice == 2:
+    # Histogram 2
+    # We also can change histograms color
+    array_2 = np.random.normal(180, 15, 260)
+    plt.hist(array_2, color = "red")
+
+
+elif choice == 3:
+    # Histogram 3
+    # We also can change width of the histograms
+    array_3 = np.random.normal(150, 10, 250)
+    plt.hist(array_3, width = 1.5)
+
+
+elif choice == 4:
+    # Histogram 4
+    # We also can make histograms transparent (half seen)
+    array_4 = np.random.normal(180, 20, 250)
+    plt.hist(array_4, alpha = 0.5, width = 2)
+
+
+plt.show()
